@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/graph_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/y_axis_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/x_axis_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/draggable_image_view"
+        android:background="@mipmap/ic_launcher"
+        android:layout_gravity="bottom|right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/x_cordinator_line"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="2dp"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/y_cordinator_line"
+        android:background="@android:color/white"
+        android:layout_width="2dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"></LinearLayout>
+</FrameLayout>
